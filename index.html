@@ -1,0 +1,353 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app1.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.iconos-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/images (2).jpg','imagenes/20160325_164037.png','imagenes/20160325_125552.png','imagenes/20160325_142607.jpg','imagenes/FB_IMG_1459014274738.jpg','imagenes/images (2).png')">
+<div data-role="page" id="Principal" data-theme="a">
+   <div data-role="header" data-add-back-btn="false" data-back-btn-text="Regresar"
+   data-back-btn-theme="a">
+      <h1>SEMANA SANTA</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+   <center>
+     <div>
+        <img src="imagenes/images.jpe"width="50%" height="37%"> </div>
+  </div>
+   </center>
+    
+    
+
+<div>
+   <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>El significado de la Semana Santa</h2> 
+     </a>
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Domingo de Pascua</h2>
+     </a> 
+   </li>
+      <li class="ui first-child ui-last-child">
+     <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Como se establece la Semana Santa</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebraciòn en San pablo Ahuatempan</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebraciòn en Iztapalapa</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebraciòn en el Vaticano</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebraciòn en Jerusalén</h2>
+     </a> 
+   </li>
+   <li class="ui first-child ui-last-child">
+     <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+     <h2>Celebraciòn en Estados Unidos</h2>
+     </a> 
+   </li>
+  </ul>
+  
+  
+  
+  
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+     <img src="imagenes/persona_azul.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Aplicación Dos</h4>
+     <h4>Juan Pérez Hernández</h4>
+   </div>
+</div>
+</div>       
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>SIGNIFICADO</h1>
+   </div>
+  <div data-role="content" align="center">
+   <div>
+       <p>La Semana Santa o Semana Mayor está cargada del sentido cristiano y según estos debe ser tiempo para reflexionar en Jesucristo, hijo de Dios que ofrendó su vida para que vivamos en paz.
+  
+  El significado de esta semana es puramente cristiano, sin embargo, este período de asueto es empleado por muchas personas para realizar actividades de esparcimiento y diversión.
+  <br>
+  <br>
+  <br>
+  
+  Este “tiempo santo” muy bien podría ser utilizado para reflexionar en qué cosas podemos hacer para realizar cambios positivos en nuestras vidas, trabajo, en el país y por qué no hasta en el mundo.
+
+  Para los cristianos, la Semana Santa es el tiempo litúrgico más importante, y es dedicado a la oración y reflexión de los misterios de la pasión, muerte y resurrección de Jesucristo, hijo de Dios.</p>
+         <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1> 
+    <P>La Semana Mayor se inicia este primero de abril con el Domingo de Ramos, día en que se recuerda la entrada triunfal de Jesús a Jerusalén y finaliza el domingo 8 del mismo mes, con el Domingo de Resurrección.
+  
+  Por su lado, el Jueves Santo abre el Triduo Pascual, que no es más que los tres días en que los católicos celebran la pasión, muerte y resurrección de Jesucristo. Comprende el tiempo desde la tarde del Jueves Santo, hasta la tarde del Domingo de Pascua. Es el corazón del año litúrgico.
+  <br>
+  <br>
+  <br>
+  El Viernes Santo es el episodio más triste de la Semana Santa conmemorándose la muerte en la cruz de nuestro señor Jesucristo.
+  
+  El Sábado Santo se medita sobre el misterio de la pasión de Cristo, el Domingo de Resurrección, es el momento de mayor júbilo donde se celebra la resurrección de Jesús.</p>
+   <img src="imagenes/descarga.jpe"width="48%" height="48%">
+     <P>Es bueno aclarar que todos los actos que se realizan desde el inicio de la Semana Santa, tienen un significado cristiano, y con ello se busca recordar el sacrificio de Jesús en la cruz.
+    
+    El verdadero significado de la gran Fiesta Pascual, como también se le llama a este período, es tener un encuentro con Dios y acercarnos más al prójimo realizando buenas acciones.
+    
+    Los cristianos interpretan la Semana Santa, no como el recuerdo de un hecho histórico, o un momento de vacaciones sin sentido, para ellos es tiempo de perdón y de reconciliación fraterna, expulsando de sus corazones el rencor, odio y la envidia.</P>
+  
+   <img src="imagenes/images (1).jpe"width="45%" height="45%">
+     <p>La época se inicia con la cuaresma, conocida como el tiempo de preparación, donde se recuerda los cuarenta días de Jesús en el desierto. Comienza con el miércoles de ceniza y culmina con el Domingo de Ramos.</p>
+   </div> 
+   </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+    <h4>Juan Pérez Hernández</h4>
+  </div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Domingo de Pascua</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+        <p> El Domingo de Resurrección, es el día en que Jesucristo resucita después de la crucifixión, va al encuentro con sus apóstoles y luego sube hacia los cielos, también es la finalización de la Semana Santa.
+    
+    El Domingo de Resurrección o de Pascua es importante para los católicos, ya que con la Resurrección es cuando adquiere sentido toda su religión.</p>
+                <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1> 
+        <p>Este día de resurrección es alegre pero triste para los Cofrades, alegre por la manifestación de la resurrección que sustenta la religión y triste porque la Semana Santa finaliza.</p>
+        <p>Se realizan diversas procesiones religiosas, en muchas ciudades como coloflón de las fiestas desfilan representaciones de todas las cofradías, las procesiones de este día están llenas de color y alegria. Se mezclaran en los pasos capirotes de todos los colores que han desfilado a lo largo de la semana.  </p>
+        <img src="imagenes/descarga (3).jpe"width="65%" height="50%">
+    </div>   
+    </div>
+  </div>
+    <div data-role="footer" data-theme="a">
+      <h4>Juan Pérez Hernández</h4>
+    </div>
+</div>
+</div>     
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Como se establece</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+           <img src="imagenes/images (12).jpe"width="60%" height="50%">
+      <p> Se establece la fecha de celebración de Semana Santa varía entre el 22 de marzo y el 25 de abril de cada año. No hay una fecha fija porque se realiza el domingo siguiente a la primera luna llena de la primavera del hemisferio norte. Esta fiesta determina, a su vez, cuándo se celebran otras fiestas católicas.</p>
+        <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1>
+         <p>Probablemente usted habrá notado que la fecha de la Semana Santa varía considerablemente de un año al siguiente. Esta fecha se escoge a partir de una fórmula establecida por el Emperador Romano Constantino el Grande y el Concilio de Nicea en 325 d. C. Usted puede usar la fórmula para verificar la fecha de Pascua cada año.</p>
+         <p>En primer lugar debe hallar el equinocio vernal, o primer día de primavera ( alrededor del 21- 22 de marzo ), en un calendario que incluya datos astronómicos básicos. Después busque la siguiente luna llena, normalmente está indicada en una esquina del calendario. La Semana Santa caerá el domingo siguiente.         </p>
+           <img src="imagenes/descarga.jpg"width="60%" height="50%">  
+         <p>De acuerdo con esta regla, la fecha más tardía posible para Semana Santa sería el 25 de Abril, la próxima ocurrencia será en 2038. La más temprana el 22 de Marzo, en 2285. La mayoría de las veces, la Semana Santa cae durante la primera semana de Abril.</p>
+           <img src="imagenes/images (1).jpg"width="60%" height="50%">
+          
+        </div>
+    </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+     <h4>Juan Pérez Hernández</h4>
+   </div>
+</div>
+</div>   
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"  data-back-btn-theme="a">
+    <h1>Celebración en San pablo Ahuatempan</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p> <strong>Domingo de Ramos</strong></p>
+      <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image1','','imagenes/images (2).png',1)"><img src="imagenes/images (1).jpe" width="624" height="267" id="Image1"></a></p>
+      <p>El Domingo de Ramos se celebra con hojas de palma, las cuales son bendecidas y posteriormente quemadas para usar sus cenizas el Miércoles de Ceniza del siguiente año. Aunque también se acostumbra colgarlas detrás de la puerta de entrada del hogar como defensa para permitir únicamente el paso de la energía positiva.
+       Evoca la entrada del triunfo de Jesús a Jerusalén, donde fue recibido de forma positiva, motivo por el que surge la tradición de utilizar ramos para celebrar. Finalmente, el Domingo de Pascua, se celebra el máximo evento para los cristianos: la Resurrección.</p>
+      
+     <p> Viernes Santo</p>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','imagenes/FB_IMG_1459014274738.jpg',1)"><img src="imagenes/images (1).jpe" width="624" height="267" id="Image2"></a></p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','imagenes/20160325_164037.png',1)"><img src="imagenes/images (1).jpe" width="624" height="267" id="Image3"></a></p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <p>&nbsp;</p>
+     <div data-role="collapsible" data-content-theme="false">
+         <h1>Más información</h1> 
+
+ <p>La representación de Las tres caídas de Jesús se puede admirar en casi cualquier comunidad, pues en todos, se realiza la dramatización del Vía Crucis, aunque te aconsejamos viajar hasta el pequeño cerrito que se encuentra en la misma comunidad de San Pablo Ahuatempan .
+
+Poco a poco ascienden hasta que alrededor de las de la tarde llega a la cima y empieza la crucifixión de Jesús y los dos ladrones.</p>
+ <p> Tras las famosas siete palabras y su posterior muerte, Jesús, Dimas y Gestas son bajados de sus cruces.
+   
+   Concluida ésta emotiva y singular representación de la pasión y muerte de Jesucristo, despues de la representaciòn y muerte de jesucristo se hace la Procesión del silencio, la cual se desarrolla desde hace más de tres décadas ininterrumpidamente.</p>
+ <p> Comienza aproximadamente a las 6:30 de la tarde, en el misma comunidad pasando por la mayoria de las calles</p>
+ <p><br> 
+   </p>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/20160325_125552.png',1)"><img src="imagenes/images (1).jpe" width="624" height="267" id="Image4"></a></p>
+ 
+ <p>&nbsp;</p>
+ <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/20160325_142607.jpg',1)"><img src="imagenes/images (1).jpe" width="624" height="267" id="Image6"></a><br>
+   <br>
+ </p>
+ <p>Domingo de resurrección ò de pascua</p>
+
+      <p>Se celebra con una Misa solemne en la cual se enciende el cirio pascual, que simboliza a Cristo resucitado, luz de todas las gentes.
+      Se podría decir que el Domingo de Resurrección marca el final de esta celebración de la Semana Santa, con la coronación del nuevo Centurión quien se encargará de continuar con la tradición el año siguiente.</p>
+      </div>
+    </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+    <h4>Juan Pérez Hernández</h4>
+  </div>
+</div>      
+</div>  
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Celebración en Iztapalaca</h1>
+   </div>
+  <div data-role="content" align="center">
+   <div>
+     <img src="imagenes/images (9).jpe"width="65%" height="33%">
+     <p> En Iztapalapa tiene lugar una ceremonia, fiesta y representación de la Pasión, que no responde ni a una narración sacra, ni a un teatro tradicional: es una expresión de múltiples aportaciones que se funde en una particular sincretización.</p>
+     <img src="imagenes/images (8).jpe"width="63%" height="36%">
+     <p>Iztapalapa, una de las 16 delegaciones que constituyen el Distrito Federal, ha sustituido sus canales, chinampas y trajineras con verduras y flores, por ejes viales y el Metro. Tiene en el Cerro de la Estrella, en sus templos, plazas y jardines de Ia cabecera, los espacios sagrados donde se escenifica cada año la representación ritual por excelencia.</p>
+     <p> La coexistencia de Iztapalapa con la gran urbe, no ha logrado borrar Ias viejas costumbres; sus habitantes renuevan sus lazos de amistad, de compadrazgo y vecindad, de pertenencia e identidad con el barrio y con Ia localidad en las distintas fiestas de su calendario, pero es en la Semana Santa cuando éstos aparecen con mayor fuerza. </p>
+     <img src="imagenes/descarga (5).jpe"width="64%" height="42%">
+   </div>
+  </div>
+  <div data-role="footer" data-theme="a">
+    <h4>Juan Pérez Hernández</h4>
+  </div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>Celebración en el Vaticano</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+      <img src="imagenes/images (5).jpe"width="60%" height="50%">
+      <p>Cómo es la celebración
+
+En el acto, de marcada solemnidad, participan cientos de personas, entre ellas el cuerpo diplomático acreditado ante la Santa Sede.
+
+Se leerá la Pasión según San Juan y, acto seguido, el predicador de la Casa Pontificia, el franciscano capuchino Raniero Cantalamessa, pronunciará la homilía.       </p>
+      <p><img src="imagenes/images (6).jpe"width="60%" height="50%"></p>
+      <p>La Liturgia del Viernes Santo es la única del año en la que no hay consagración, pero sí comunión, y estará presidida por una cruz cubierta con una tela roja situada en el altar mayor del templo.
+        
+        La ceremonia de la Pasión es seguida por el tradicional Via Crucis en el Coliseo de Roma, un acto que comenzará a las 21.15 locales.</p>
+        <img src="imagenes/images (4).jpe"width="67%" height="50%">
+     </div>
+  </div>
+    <div data-role="footer" data-theme="a">
+      <h4>Juan Pérez Hernández</h4>
+    </div>
+</div>
+</div>     
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Celebración en Jerusalén</h1>
+  </div>
+  <div data-role="content" align="center">
+    <div>
+      <p> Semana Santa y Pascua en Jerusalén</p>
+      <img src="imagenes/images.jpg"width="60%" height="50%">
+      <p> El periodo de la Cuaresma está llegando a su fin y tanto los cristianos locales como los miles de peregrinos que han acudido a la Ciudad Santa se están preparando para celebrar Semana Santa y su culminación en el Domingo de Resurrección, la fecha de mayor importancia del año litúrgico cristiano.      </p>
+      <img src="imagenes/images (7).jpe"width="67%" height="50%">     
+      <p>No hay nada como vivir la Semana Santa en Jerusalén.  Celebrar los grandes eventos de la historia de salvación y de la vida de Jesús en los mismos lugares en los que ocurrieron es una experiencia de fe conmovedora e inolvidable para todos los creyentes.</p>
+       
+      <p> Oficialmente, Semana Santa comienza al conmemorarse la entrada de Jesús en Jerusalén el Domingo de Ramos (1 de abril), con la misa matinal de las 8 en la Iglesia del Santo Sepulcro y la tradicional procesión de Palmas durante la tarde. Más tarde, a las 14.30, miles de cristianos de todo el mundo marcharán jubilosamente desde Betfagé, rezando y cantando en todos los idiomas, descendiendo por la ladera occidental del Monte de los Olivos en camino a la Ciudad Vieja, a través del valle de Kidrón.</p>
+      <img src="imagenes/descarga (4).jpe"width="64%" height="50%">
+    </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+     <h4>Juan Pérez Hernández</h4>
+   </div>
+</div>
+</div>   
+
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+   <h1>Celebración en Esatdos Unidos</h1>
+  </div>
+   <div data-role="content" align="center">
+     <div>
+       <img src="imagenes/images (11).jpe"width="62%" height="51%">
+       <p> En países como Estados Unidos, la celebración de la Pascua prescinde de grandes despliegues religiosos, aunque hay quien lo celebra yendo a misa.
+       
+       <p> El Domingo de Pascua es una de las fechas tradicionales en EE.UU. para los reencuentros familiares, y una ocasión para que las niñas y jóvenes luzcan vestidos casi nupciales.</p>
+       <p><img src="imagenes/descarga (7).jpe"width="65%" height="53%">         </p>
+       <p>Lo habitual en Estados Unidos es que la Pascua se convierta en una semana de vacaciones, aunque ahora el spring break (vacaciones de primavera) escolar no necesariamente coincide con la Semana Santa o Pascua. En las escuelas públicas, dependiendo del estado e incluso del condado, esa semana de vacaciones ocurrirá antes, durante o incluso después de Easter.
+       </p>
+       </p>
+       <p><img src="imagenes/images (10).jpe"width="68%" height="50%"></p>
+       <p>El Domingo de Pascua se intercambian obsequios de todo tipo y están presentes en todas partes los huevos y conejitos elaborados en chocolate.</p>
+       <p><img src="imagenes/images (3).jpg"width="68%" height="50%">
+       <p>&nbsp;</p>
+       <p>&nbsp;</p>
+     </div>
+  </div>
+   <div data-role="footer" data-theme="a">
+      <h4>Juan Pérez Hernández</h4>     
+   </div>   
+</div>
+</div>  
+   
+</body>
+</html>
